@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+display: flex;
+overflow-x: scroll;
+background: lightgreen;
+}
+
+
+img{
+    width: 50%;
+    height: 50%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+border:20px double coral;
+background: chocolate;
+}
+
+
+.sections{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   min-width: 95%;
+height: 95%;
+margin-right: 100px;
+border: 5px solid aqua;
+}
+::-webkit-scrollbar {
+    height: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+display: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: coral;
+    border-right: 100px solid transparent;
+    background-clip: content-box;
+  }
+  
+  
