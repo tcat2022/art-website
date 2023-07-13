@@ -3,13 +3,14 @@
     padding: 0;
 }
 #main{
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 50px);
+    position: absolute;
+    width:100%;
+    height:calc(100vh - 50px);
 display: flex;
 overflow-x: scroll;
 background: rgb(182, 3, 3);
 }
+
 
 
 img{
@@ -34,6 +35,25 @@ height: 95%;
 margin-right: 100px;
 border: 5px solid aqua;
 }
+
+#home h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 200px;
+}
+
+#about h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 200px;
+}
+
 body::-webkit-scrollbar{
 display: none;
 }
@@ -43,7 +63,7 @@ display: none;
   }
   
  #main::-webkit-scrollbar-track {
-border-radius: 10px;
+
 background-color: rgb(230, 67, 67);
 border: 2px solid ivory;
 margin-inline: 2px;
@@ -51,7 +71,7 @@ margin-inline: 2px;
   
  #main::-webkit-scrollbar-thumb {
     background-color: rgb(218, 29, 29);
-    border-radius: 10px;
+    
     background-clip: content-box;
     border: 2px solid ivory;
   }
@@ -60,7 +80,29 @@ margin-inline: 2px;
     background-color: rgb(94, 29, 29);   
   }
   nav{
+    position: relative;
     width: 100%;
-    height: 50px;
+height: 50px;
+background: rgb(182, 3, 3);
+display: flex;
+gap: 45%;
+  }
 
+  nav h1{
+margin-left: 50px;
+font-size: 40px;
+color: chartreuse;
+  }
+ #links-container{
+  position: relative;
+width: 531px;
+    font-size: 30px;
+  }
+
+  #links-container a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 100px;
+position: relative;
+top: 10px;
   }

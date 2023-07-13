@@ -1,13 +1,4 @@
-var el = document.documentElement;
 
-   
-
-function fullScreen(){
-
-      if(el.requestFullscreen){
-        el.requestFullscreen()  
-    }
-}
 
 (function(){
     function scrollH(e){
